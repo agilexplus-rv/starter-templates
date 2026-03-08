@@ -151,17 +151,32 @@ Checks (in order):
 
 ## Compliance Projects
 
-If your system handles financial data, health data, or personal data subject to
-GDPR, CCPA, HIPAA, PCI-DSS, or similar:
+### Profiles
 
-Activate the regulatory-heavy profile:
+Profiles adjust the framework's architecture requirements, approval gates,
+and documentation obligations to match your project type.
+
+| Profile | Use when | File |
+|---|---|---|
+| **Standard** | Default — typical web app, no special constraints | `docs/ai/profiles/standard.md` |
+| **Startup MVP** | Pre-revenue, speed matters, 1–3 person team | `docs/ai/profiles/startup-mvp.md` |
+| **API-Only** | No frontend — backend service or microservice | `docs/ai/profiles/api-only.md` |
+| **UI-Heavy** | 20+ components, design system, Gemini pipeline elevated | `docs/ai/profiles/ui-heavy.md` |
+| **Regulatory-Heavy** | HIPAA, GDPR, PCI-DSS, financial or medical data | `docs/ai/profiles/regulatory-heavy.md` |
+
+### Activating a profile
+
+Load the profile file alongside your requirements at the start of any Claude session:
+
 ```
-Use docs/ai/profiles/regulatory-heavy.md alongside requirements.md.
+Use docs/ai/requirements.md and run the wizard.
+Load docs/ai/claude-role-constraints.md.
+Load docs/ai/profiles/startup-mvp.md — use this profile.
 ```
 
-This adds mandatory audit logging architecture, encryption specifications,
-data retention policies, compliance artefact generation, and additional
-preflight checks.
+Standard is the default and requires no explicit loading.
+Profiles can be combined where it makes sense (e.g. API-Only + Regulatory-Heavy
+for a HIPAA-compliant backend service).
 
 ---
 
