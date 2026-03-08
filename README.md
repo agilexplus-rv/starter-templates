@@ -1,5 +1,25 @@
 # Rudie Orchestrator Platform — v5
 
+## Installation
+
+```bash
+git clone https://github.com/agilexplus-rv/starter-templates.git my-project
+cd my-project
+rm -rf .git && git init
+git add . && git commit -m "Initial commit from Rudie Orchestrator template"
+```
+
+Then connect your own repo and push:
+
+```bash
+git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO.git
+git branch -M main && git push -u origin main
+```
+
+See `README-baby-steps.md` for the full setup walkthrough.
+
+---
+
 ## Principle
 
 You provide **INTENT**

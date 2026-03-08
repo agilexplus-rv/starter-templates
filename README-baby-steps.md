@@ -5,13 +5,37 @@ Follow every step in order.
 
 ---
 
-## Step 1 — Create your project folder
+## Step 0 — Get the framework files
+
+Clone the starter template from GitHub into a new folder for your project:
 
 ```bash
-mkdir my-project
+git clone https://github.com/agilexplus-rv/starter-templates.git my-project
 cd my-project
-git init
 ```
+
+Then disconnect it from the template remote so your project has its own git history:
+
+```bash
+rm -rf .git
+git init
+git add .
+git commit -m "Initial commit from Rudie Orchestrator template"
+```
+
+Then point it at your own new GitHub repo (create one at github.com first):
+
+```bash
+git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO.git
+git branch -M main
+git push -u origin main
+```
+
+You now have a clean copy of the framework in your own repository, ready to build on.
+
+---
+
+## Step 1 — (Already done)
 
 ---
 
