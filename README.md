@@ -1,4 +1,4 @@
-# Rudie Orchestrator Platform — v5
+# Rudie Orchestrator Platform
 
 ## Installation
 
