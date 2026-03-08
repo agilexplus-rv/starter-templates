@@ -68,3 +68,7 @@ logs/
 tmp/
 temp/
 /tmp/
+
+# ─── Internal audit and test reports (do not publish) ────────────────────────
+docs/ai/FRAMEWORK-AUDIT-REPORT.md
+docs/ai/STRESS-TEST-REPORT.md
