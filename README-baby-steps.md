@@ -1,4 +1,4 @@
-# Baby Steps — Getting Started with Rudie Orchestrator v5
+# Baby Steps — Getting Started with Rudie Orchestrator
 
 This guide walks you through your first project from zero to first deployment.
 Follow every step in order.
